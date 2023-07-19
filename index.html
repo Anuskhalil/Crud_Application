@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Crud Assignment</title>
+  </head>
+
+
+<!-- Another Assignment Work -->
+    <!-- <div class="container my-5">
+        <div class="row">
+            <div class="col-md-10 m-auto bg-light p-5">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h1>Assignment</h1>
+                        <h1>API Front end</h1>
+                        <h6>Develop by Anus Khalil</h6>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="d-flex">
+                    <div style="width: 30%;">
+                    <h4>Student Information</h4>
+                    </div>
+                </div>
+                <hr class="my-2">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="add_num1">Student Name</label>
+                        <input type="text" class="form-control" id="student_name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="add_num2">Father Name</label>
+                        <input type="text" class="form-control" id="father_name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="add_num2">Age</label>
+                        <input type="text" class="form-control" id="age">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="add_num2">Roll No</label>
+                        <input type="text" class="form-control" id="roll_no">
+                        <input type="hidden" class="form-control" id="student_id">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" style="margin-top: 30px;" onclick="post_create();">Create Post Request</button>
+                        <button class="btn btn-success" style="margin-top: 30px;" onclick="get_all();">Get All Student</button>
+                        <button class="btn btn-warning" style="margin-top: 30px;" onclick="update_student();">Update Student</button>
+                        <button class="btn btn-danger" style="margin-top: 30px;" onclick="delete_student();">Delete Student</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="Divusers">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Student Name</th>
+                                    <th>Father Name</th>
+                                    <th>Age</th>
+                                    <th>Roll No</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tblper">
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+    <body style="color: white; background-color: rgb(40, 104, 201,0.5);">
+
+        <div class="container mt-5">
+            <div class="text-center">
+                <h1 class="display-5 mb-5"> <strong>CRUD Application</strong></h1>
+            </div>
+            <div class="main row justify-content-center">
+                <form action="" id="student-form" class="row justify-content-center mb-4" autocomplete="off">
+                    <div class="col-10 col-md-8 mb-3">
+                        <label for="firstName">First name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+                    </div>
+                    <div class="col-10 col-md-8 mb-3">
+                        <label for="lastName">Last name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
+                    </div>
+                    <div class="col-10 col-md-8 mb-3">
+                        <label for="rollNo">Roll No</label>
+                        <input type="text" class="form-control" id="rollNo" placeholder="Enter Roll No">
+                    </div>
+                    <div class="col-10 col-md-8">
+                        <input type="submit" class="btn btn-success add-btn" value="submit">
+                    </div>
+                </form>
+                <div class="col-12 col-md-10 mt-5">
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Roll No</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="student-list">
+                            <tr>
+                                <td>Dear</td>
+                                <td>Programmer</td>
+                                <td>25</td>
+                                <td>
+                                    <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                    <a href="#" class="btn btn-success btn-sm delete">Delete</a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+<script src="./function.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
